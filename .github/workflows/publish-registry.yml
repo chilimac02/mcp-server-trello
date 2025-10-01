@@ -41,3 +41,7 @@ jobs:
 
       - name: Publish to MCP Registry
         run: ./mcp-publisher publish
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
